@@ -5,4 +5,5 @@ Hacking Tools
 
 Spoofing tool using "arpspoof" to block access to a local network for all IPs on the same network.
 
-  - gateway ip: enter the router ip
+  - Interface : choose the interface where to execute the attack
+  - Range : Select the range (0-255 by default)
