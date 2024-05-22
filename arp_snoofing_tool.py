@@ -16,7 +16,7 @@ def install_arpspoof():
     if not check_installation():
         print("Installing arpspoof... \n")
         subprocess.run(['sudo', 'apt', 'update', '-y'])
-        subprocess.run(['sudo', 'apt', 'install', 'arpsoof', '-y'])
+        subprocess.run(['sudo', 'apt', 'install', 'dsniff', '-y'])
  
 # Scan the network to discover possible subnetworks
 def scan_network(ip_range, gateway):
